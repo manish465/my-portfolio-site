@@ -18,10 +18,10 @@ const NavBar = () => {
                 </Header>
                 <Drawer title="Title">
                     <Navigation>
-                        <Link to="/">Link</Link>
-                        <Link to="/">Link</Link>
-                        <Link to="/">Link</Link>
-                        <Link to="/">Link</Link>
+                        <Link to="/resume">Resume</Link>
+                        <Link to="/aboutme">About Me</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact</Link>
                     </Navigation>
                 </Drawer>
                 <Content>
