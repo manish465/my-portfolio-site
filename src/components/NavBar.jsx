@@ -1,5 +1,8 @@
 import React from "react";
 import { Layout, Header, Navigation, Drawer } from "react-mdl";
+import { Content } from "react-mdl/lib/Layout";
+import Main from "./main";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -7,20 +10,23 @@ const NavBar = () => {
             <Layout>
                 <Header title="Title" scroll>
                     <Navigation>
-                        <a href="/">Link</a>
-                        <a href="/">Link</a>
-                        <a href="/">Link</a>
-                        <a href="/">Link</a>
+                        <Link to="/resume">Resume</Link>
+                        <Link to="/aboutme">About Me</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact</Link>
                     </Navigation>
                 </Header>
                 <Drawer title="Title">
                     <Navigation>
-                        <a href="/">Link</a>
-                        <a href="/">Link</a>
-                        <a href="/">Link</a>
-                        <a href="/">Link</a>
+                        <Link to="/">Link</Link>
+                        <Link to="/">Link</Link>
+                        <Link to="/">Link</Link>
+                        <Link to="/">Link</Link>
                     </Navigation>
                 </Drawer>
+                <Content>
+                    <Main />
+                </Content>
             </Layout>
         </div>
     );
