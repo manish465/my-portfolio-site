@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import LandingPage from "./LandingPage";
+import LandingPage from "./LandingPage/LandingPage";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Projects from "./Projects";
