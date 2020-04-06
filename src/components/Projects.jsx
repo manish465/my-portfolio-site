@@ -9,6 +9,12 @@ class Projects extends Component {
     toggleCategories = () => {
         if (this.state.activeTab === 0) {
             return <h1>React</h1>;
+        } else if (this.state.activeTab === 1) {
+            return <h1>HTML</h1>;
+        } else if (this.state.activeTab === 2) {
+            return <h1>Flutter</h1>;
+        } else if (this.state.activeTab === 3) {
+            return <h1>JavaScript</h1>;
         }
     };
 
