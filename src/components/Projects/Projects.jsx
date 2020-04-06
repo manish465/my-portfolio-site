@@ -1,16 +1,7 @@
 import React, { Component } from "react";
-import {
-    Tabs,
-    Tab,
-    Grid,
-    Cell,
-    Card,
-    CardTitle,
-    CardText,
-    CardMenu,
-    IconButton,
-} from "react-mdl";
+import { Tabs, Tab, Grid, Cell } from "react-mdl";
 import "./Projects.css";
+import CardElement from "./CardElement";
 
 class Projects extends Component {
     state = {
@@ -19,22 +10,7 @@ class Projects extends Component {
 
     toggleCategories = () => {
         if (this.state.activeTab === 0) {
-            return (
-                <Card shadow={5} className="card">
-                    <CardTitle className="card-title">
-                        React Project #1
-                    </CardTitle>
-                    <CardText>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam sapiente molestias architecto harum maxime a
-                        quia nulla voluptates earum alias, cumque ratione rem
-                        aperiam expedita corporis quae quis nam quasi?
-                    </CardText>
-                    <CardMenu style={{ color: "#fff" }}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-            );
+            return <CardElement />;
         } else if (this.state.activeTab === 1) {
             return <h1>HTML</h1>;
         } else if (this.state.activeTab === 2) {
