@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell } from "react-mdl";
 import "./Projects.css";
-import CardElement from "./CardElement";
+import CardElement from "./Card/CardElement";
 
 class Projects extends Component {
     state = {
