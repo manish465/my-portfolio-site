@@ -1,5 +1,15 @@
 import React, { Component } from "react";
-import { Tabs, Tab, Grid, Cell, Card, CardTitle } from "react-mdl";
+import {
+    Tabs,
+    Tab,
+    Grid,
+    Cell,
+    Card,
+    CardTitle,
+    CardText,
+    CardMenu,
+    IconButton,
+} from "react-mdl";
 import "./Projects.css";
 
 class Projects extends Component {
@@ -11,7 +21,18 @@ class Projects extends Component {
         if (this.state.activeTab === 0) {
             return (
                 <Card shadow={5} className="card">
-                    <CardTitle className="card-title"></CardTitle>
+                    <CardTitle className="card-title">
+                        React Project #1
+                    </CardTitle>
+                    <CardText>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam sapiente molestias architecto harum maxime a
+                        quia nulla voluptates earum alias, cumque ratione rem
+                        aperiam expedita corporis quae quis nam quasi?
+                    </CardText>
+                    <CardMenu style={{ color: "#fff" }}>
+                        <IconButton name="share" />
+                    </CardMenu>
                 </Card>
             );
         } else if (this.state.activeTab === 1) {
