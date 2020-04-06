@@ -11,6 +11,7 @@ const NavBar = () => {
             <Layout>
                 <Header title="Title" scroll className="header-color">
                     <Navigation>
+                        <Link to="/">Home</Link>
                         <Link to="/resume">Resume</Link>
                         <Link to="/aboutme">About Me</Link>
                         <Link to="/projects">Projects</Link>
@@ -19,6 +20,7 @@ const NavBar = () => {
                 </Header>
                 <Drawer title="Title">
                     <Navigation>
+                        <Link to="/">Home</Link>
                         <Link to="/resume">Resume</Link>
                         <Link to="/aboutme">About Me</Link>
                         <Link to="/projects">Projects</Link>
