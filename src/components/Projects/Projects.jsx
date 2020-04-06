@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Tabs, Tab, Grid, Cell } from "react-mdl";
+import { Tabs, Tab, Grid, Cell, Card, CardTitle } from "react-mdl";
+import "./Projects.css";
 
 class Projects extends Component {
     state = {
@@ -8,7 +9,11 @@ class Projects extends Component {
 
     toggleCategories = () => {
         if (this.state.activeTab === 0) {
-            return <h1>React</h1>;
+            return (
+                <Card shadow={5} className="card">
+                    <CardTitle className="card-title"></CardTitle>
+                </Card>
+            );
         } else if (this.state.activeTab === 1) {
             return <h1>HTML</h1>;
         } else if (this.state.activeTab === 2) {
