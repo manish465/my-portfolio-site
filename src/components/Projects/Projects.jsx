@@ -10,13 +10,41 @@ class Projects extends Component {
 
     toggleCategories = () => {
         if (this.state.activeTab === 0) {
-            return <CardElement />;
+            return (
+                <div className="projects-grid">
+                    <CardElement name="React" number="1" />
+                    <CardElement name="React" number="2" />
+                    <CardElement name="React" number="3" />
+                    <CardElement name="React" number="4" />
+                </div>
+            );
         } else if (this.state.activeTab === 1) {
-            return <h1>HTML</h1>;
+            return (
+                <div className="projects-grid">
+                    <CardElement name="HTML" number="1" />
+                    <CardElement name="HTML" number="2" />
+                    <CardElement name="HTML" number="3" />
+                    <CardElement name="HTML" number="4" />
+                </div>
+            );
         } else if (this.state.activeTab === 2) {
-            return <h1>Flutter</h1>;
+            return (
+                <div className="projects-grid">
+                    <CardElement name="Flutter" number="1" />
+                    <CardElement name="Flutter" number="2" />
+                    <CardElement name="Flutter" number="3" />
+                    <CardElement name="Flutter" number="4" />
+                </div>
+            );
         } else if (this.state.activeTab === 3) {
-            return <h1>JavaScript</h1>;
+            return (
+                <div className="projects-grid">
+                    <CardElement name="JavaScript" number="1" />
+                    <CardElement name="JavaScript" number="2" />
+                    <CardElement name="JavaScript" number="3" />
+                    <CardElement name="JavaScript" number="4" />
+                </div>
+            );
         }
     };
 
@@ -33,15 +61,11 @@ class Projects extends Component {
                     <Tab>Flutter</Tab>
                     <Tab>JavaScript</Tab>
                 </Tabs>
-                <section className="projects-grid">
-                    <Grid className="projects-grid">
-                        <Cell col={12}>
-                            <div className="content">
-                                {this.toggleCategories()}
-                            </div>
-                        </Cell>
-                    </Grid>
-                </section>
+                <Grid>
+                    <Cell col={12}>
+                        <div className="content">{this.toggleCategories()}</div>
+                    </Cell>
+                </Grid>
             </div>
         );
     }

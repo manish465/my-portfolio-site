@@ -9,3 +9,7 @@
     background: url("D:/DISINGER/WEB/my-portfolio-site/src/assets/absrtact.jpg")
         center / cover;
 }
+
+.projects-grid {
+    display: flex;
+}

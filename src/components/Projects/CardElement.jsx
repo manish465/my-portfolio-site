@@ -4,7 +4,9 @@ import { Card, CardTitle, CardText, CardMenu, IconButton } from "react-mdl";
 const CardElement = (props) => {
     return (
         <Card shadow={5} className="card">
-            <CardTitle className="card-title">React Project #1</CardTitle>
+            <CardTitle className="card-title">
+                {props.name} Project #{props.number}
+            </CardTitle>
             <CardText>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam sapiente molestias architecto harum maxime a quia nulla
